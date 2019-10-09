@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=ChessBoard
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ChessBoard\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=ChessBoard()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ ChessBoard.\r\n\ \r\n
+comment10.params=
+comment10.target=void\ clearBoard()
+comment11.params=
+comment11.target=void\ updatePieces()
+comment2.params=
+comment2.target=void\ save()
+comment3.params=
+comment3.target=void\ load()
+comment4.params=
+comment4.target=void\ act()
+comment5.params=
+comment5.target=void\ clickManage()
+comment6.params=
+comment6.target=void\ distinguishTurn()
+comment7.params=r\ c
+comment7.target=int\ getThreat(int,\ int)
+comment8.params=
+comment8.target=void\ highlightMoves()
+comment9.params=
+comment9.target=void\ clearHighlight()
+numComments=12

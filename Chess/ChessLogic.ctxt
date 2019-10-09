@@ -1,0 +1,121 @@
+#BlueJ class context
+comment0.target=ChessLogic
+comment0.text=\r\n\ The\ logic\ for\ the\ game\ Chess.\r\n\ \r\n\ @author\ David\ Choi\r\n\ @version\ 10/02/2016\r\n
+comment1.params=
+comment1.target=ChessLogic()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ ChessLogic.\r\n
+comment10.params=
+comment10.target=boolean\ moved()
+comment10.text=\r\n\ Returns\ true\ if\ a\ piece\ has\ actually\ moved.\r\n\ \r\n\ @return\ True\ if\ a\ piece\ has\ actually\ moved.\r\n
+comment11.params=row\ col\ piece
+comment11.target=boolean\ checkSquare(int,\ int,\ int)
+comment11.text=\r\n\ Returns\ true\ if\ the\ square\ can\ be\ taken\ by\ the\ given\ piece.\r\n\ \r\n\ @param\ row\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ col\ \=\ The\ column\ of\ the\ target\ square.\r\n\ @param\ piece\ \=\ The\ piece\ you\ wish\ to\ examine\ the\ validity\ of.\r\n
+comment12.params=r\ c\ piece
+comment12.target=boolean\ checkBlock(int,\ int,\ int)
+comment12.text=\r\n\ Checks\ if\ a\ piece\ of\ the\ opponent\ is\ blocking\ the\ given\ square.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ piece\ \=\ Your\ piece\ that\ you\ wish\ to\ check\ the\ blocked\ state\ of.\r\n
+comment13.params=r\ c
+comment13.target=int\ getPieceAt(int,\ int)
+comment13.text=\r\n\ Returns\ the\ piece\ at\ the\ given\ square.\r\n\ \r\n\ @param\ r\ \=\ The\ row\ of\ the\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ square.\r\n\ @return\ The\ piece\ at\ the\ given\ square.\r\n
+comment14.params=r\ c
+comment14.target=int\ getThreat(int,\ int)
+comment14.text=\r\n\ Returns\ the\ threat\ at\ a\ given\ square\ on\ the\ board.\r\n\ \r\n\ @param\ r\ \=\ The\ row\ of\ the\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ square.\r\n
+comment15.params=
+comment15.target=void\ endOfMove()
+comment15.text=\r\n\ Resets\ the\ player's\ moved\ state\ so\ that\ the\ player\ that\ should\ move\ can\ move.\r\n
+comment16.params=
+comment16.target=void\ revertInCheck()
+comment16.text=\r\n\ Reverts\ the\ previous\ move\ done\ in\ the\ case\ of\ a\ check(an\ invalid\ move).\r\n
+comment17.params=
+comment17.target=void\ manualRevert()
+comment18.params=oR\ oC\ r\ c
+comment18.target=void\ takeSquare(int,\ int,\ int,\ int)
+comment18.text=\r\n\ Makes\ the\ piece\ at\ the\ original\ square\ take\ the\ target\ square.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ r\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ target\ square.\r\n
+comment19.params=
+comment19.target=void\ changeTurn()
+comment19.text=\r\n\ Changes\ the\ turn\ if\ a\ move\ hasn't\ been\ reverted.\r\n
+comment2.params=
+comment2.target=void\ initialize()
+comment2.text=\r\n\ Initializes\ the\ board.\r\n
+comment20.params=oR\ oC\ r\ c
+comment20.target=void\ knightControl(int,\ int,\ int,\ int)
+comment20.text=\r\n\ Moves\ the\ piece\ at\ the\ original\ square\ as\ a\ knight.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ r\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ target\ square.\r\n
+comment21.params=oR\ oC\ r\ c
+comment21.target=void\ pawnControl(int,\ int,\ int,\ int)
+comment21.text=\r\n\ Moves\ the\ piece\ at\ the\ original\ square\ as\ a\ pawn.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ r\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ target\ square.\r\n
+comment22.params=oR\ oC\ r\ c
+comment22.target=void\ kingControl(int,\ int,\ int,\ int)
+comment22.text=\r\n\ Moves\ the\ piece\ at\ the\ original\ square\ as\ a\ king.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ r\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ target\ square.\r\n
+comment23.params=oR\ oC\ r\ c
+comment23.target=void\ queenControl(int,\ int,\ int,\ int)
+comment23.text=\r\n\ Moves\ the\ piece\ at\ the\ original\ square\ as\ a\ queen.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ r\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ target\ square.\r\n
+comment24.params=oR\ oC\ r\ c
+comment24.target=void\ bishopControl(int,\ int,\ int,\ int)
+comment24.text=\r\n\ Moves\ the\ piece\ at\ the\ original\ square\ as\ a\ bishop.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ r\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ target\ square.\r\n
+comment25.params=oR\ oC\ r\ c
+comment25.target=void\ rookControl(int,\ int,\ int,\ int)
+comment25.text=\r\n\ Moves\ the\ piece\ at\ the\ original\ square\ as\ a\ rook.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ r\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ target\ square.\r\n
+comment26.params=oR\ oC\ rInterval\ cInterval\ spaces
+comment26.target=void\ bRMoves(int,\ int,\ int,\ int,\ int)
+comment26.text=\r\n\ Checks\ if\ a\ piece\ at\ a\ square\ can\ move\ in\ a\ given\ direction.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ rInterval\ \=\ The\ interval\ at\ which\ you\ check\ the\ row\ movement.\r\n\ @param\ rInterval\ \=\ The\ interval\ at\ which\ you\ check\ the\ column\ movement.\r\n\ @param\ spaces\ \=\ The\ amount\ of\ spaces\ the\ piece\ will\ move.\r\n
+comment27.params=r\ c\ piece
+comment27.target=void\ checkForMove(int,\ int,\ int)
+comment27.text=\r\n\ Checks\ if\ a\ given\ piece\ can\ move\ into\ a\ certain\ square.\r\n\ \r\n\ @param\ r\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ r\ \=\ The\ column\ of\ the\ target\ square.\r\n\ @param\ piece\ \=\ The\ piece\ that\ you\ wish\ to\ check\ for\ the\ movement.\r\n
+comment28.params=oR\ oC\ rInterval\ cInterval
+comment28.target=void\ bRThreat(int,\ int,\ int,\ int)
+comment28.text=\r\n\ Puts\ the\ squares\ in\ a\ line\ from\ the\ original\ square\ in\ threat.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n\ @param\ rInterval\ \=\ The\ interval\ at\ which\ you\ threaten\ the\ rows.\r\n\ @param\ rInterval\ \=\ The\ interval\ at\ which\ you\ threaten\ the\ columns.\r\n
+comment29.params=r\ c\ piece
+comment29.target=void\ threatSquare(int,\ int,\ int)
+comment29.text=\r\n\ Sets\ the\ threat\ at\ the\ given\ square\ if\ the\ square\ has\ an\ opponent's\ piece.\r\n\ Also\ sets\ the\ threat\ if\ the\ given\ square\ is\ empty\ and\ the\ given\ piece\ is\ not\ a\ pawn.\r\n\ \r\n\ @param\ r\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ c\ \=\ The\ column\ of\ the\ target\ square.\r\n\ @param\ piece\ \=\ The\ piece\ you\ wish\ to\ set\ the\ threat\ by.\r\n
+comment3.params=r\ c
+comment3.target=boolean\ outOfBounds(int,\ int)
+comment3.text=\r\n\ Returns\ true\ if\ the\ square\ at\ the\ given\ row\ and\ column\ is\ out\ of\ the\ board.\r\n\ \r\n\ @return\ True\ if\ the\ square\ at\ the\ given\ row\ and\ column\ is\ out\ of\ the\ board.\r\n
+comment30.params=oR\ oC
+comment30.target=void\ kingThreat(int,\ int)
+comment30.text=\r\n\ Sets\ the\ threat\ as\ a\ king.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n
+comment31.params=oR\ oC
+comment31.target=void\ pawnThreat(int,\ int)
+comment31.text=\r\n\ Sets\ the\ threat\ of\ a\ pawn.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n
+comment32.params=oR\ oC
+comment32.target=void\ knightThreat(int,\ int)
+comment32.text=\r\n\ Sets\ the\ threat\ as\ a\ knight.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n
+comment33.params=oR\ oC
+comment33.target=void\ bishopThreat(int,\ int)
+comment33.text=\r\n\ Sets\ the\ threat\ as\ a\ bishop.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n
+comment34.params=oR\ oC
+comment34.target=void\ rookThreat(int,\ int)
+comment34.text=\r\n\ Sets\ the\ threat\ as\ a\ rook.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n
+comment35.params=oR\ oC
+comment35.target=void\ queenThreat(int,\ int)
+comment35.text=\r\n\ Sets\ the\ threat\ as\ a\ queen.\r\n\ \r\n\ @param\ oR\ \=\ The\ row\ of\ the\ original\ square.\r\n\ @param\ oC\ \=\ The\ column\ of\ the\ original\ square.\r\n
+comment36.params=
+comment36.target=void\ clearThreat()
+comment36.text=\r\n\ Clears\ the\ all\ of\ the\ threats\ currently\ on\ the\ board.\r\n
+comment37.params=row\ col\ piece
+comment37.target=void\ setThreat(int,\ int,\ int)
+comment37.text=\r\n\ Sets\ the\ threat\ at\ the\ given\ square\ according\ to\ the\ given\ piece.\r\n\ \r\n\ @param\ row\ \=\ The\ row\ of\ the\ target\ square.\r\n\ @param\ col\ \=\ The\ column\ of\ the\ target\ square.\r\n\ @param\ piece\ \=\ The\ piece\ you\ wish\ to\ set\ the\ threat\ by.\r\n
+comment38.params=
+comment38.target=void\ updateThreat()
+comment38.text=\r\n\ Updates\ the\ threat\ on\ the\ entire\ board.\r\n
+comment39.params=file
+comment39.target=void\ saveTo(java.io.File)
+comment4.params=piece
+comment4.target=boolean\ isWhite(int)
+comment4.text=\r\n\ Returns\ true\ if\ a\ given\ piece\ is\ white.\r\n\ \r\n\ @param\ piece\ \=\ The\ piece\ that\ you\ wish\ to\ identify.\r\n\ @return\ True\ if\ a\ given\ piece\ is\ white.\r\n
+comment40.params=file
+comment40.target=void\ loadFrom(java.io.File)
+comment5.params=piece
+comment5.target=boolean\ isBlack(int)
+comment5.text=\r\n\ Returns\ true\ if\ a\ given\ piece\ is\ black.\r\n\ \r\n\ @param\ piece\ \=\ The\ piece\ that\ you\ wish\ to\ identify.\r\n\ @return\ True\ if\ a\ given\ piece\ is\ black.\r\n
+comment6.params=
+comment6.target=boolean\ wKingCheck()
+comment6.text=\r\n\ Returns\ true\ if\ the\ white\ king\ is\ in\ check.\r\n\ \r\n\ @return\ True\ if\ the\ white\ king\ is\ in\ check.\r\n
+comment7.params=
+comment7.target=boolean\ bKingCheck()
+comment7.text=\r\n\ Returns\ true\ if\ the\ black\ king\ is\ in\ check.\r\n\ \r\n\ @return\ True\ if\ the\ black\ king\ is\ in\ check.\r\n
+comment8.params=
+comment8.target=boolean\ turnWhite()
+comment8.text=\r\n\ Returns\ true\ if\ it\ is\ the\ white\ player's\ turn.\r\n\ \r\n\ @return\ True\ if\ it\ is\ the\ white\ player's\ turn.\r\n
+comment9.params=
+comment9.target=boolean\ reverted()
+comment9.text=\r\n\ Returns\ true\ if\ a\ move\ has\ been\ reverted.\r\n\ \r\n\ @return\ True\ if\ a\ move\ has\ been\ reverted.\r\n
+numComments=41
