@@ -1,2 +1,2 @@
 # chess
-Chess with save and load built with greenfoot
+Chess with save and load built on Greenfoot
